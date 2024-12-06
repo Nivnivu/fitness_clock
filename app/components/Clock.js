@@ -25,7 +25,7 @@ export default function Clock() {
   return (
     <div className="flex flex-col items-center justify-center gap-8 my-16">
       {/* Logo */}
-      <div className="relative w-[200px] lg:w-[400px] h-[100px] lg:h-[200px] overflow-hidden">
+      <div className="relative w-[200px] lg:w-[500px] h-[100px] lg:h-[300px] overflow-hidden">
         <Image
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-W-hPRb194aEtcDVdqyo30RxrqHG8TtEN.svg"
           alt="Fitness Factory Logo"
