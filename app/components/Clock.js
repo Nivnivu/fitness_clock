@@ -23,7 +23,7 @@ export default function Clock() {
   }).format(time)
 
   return (
-    <div className="w-full max-w-5xl flex flex-col items-center">
+    <div className="w-full max-w-7xl flex flex-col items-center">
       <div className="mb-8 w-full max-w-xs">
         <Image
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-W-hPRb194aEtcDVdqyo30RxrqHG8TtEN.svg"
