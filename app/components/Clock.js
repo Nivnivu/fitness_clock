@@ -33,7 +33,7 @@ export default function Clock() {
           className="w-full h-auto"
         />
       </div>
-      <div className="w-full max-w-full aspect-[24/9] bg-black border-2 border-white flex items-center justify-center rounded-3xl shadow-2xl">
+      <div className="w-full max-w-full aspect-[16/9] bg-black border-2 border-white flex items-center justify-center rounded-3xl shadow-2xl">
         <div className="text-white font-mono text-6xl sm:text-8xl md:text-[10rem] lg:text-[13.5rem] leading-none max-w-full px-4 overflow-hidden text-center">
           {formattedTime}
         </div>
