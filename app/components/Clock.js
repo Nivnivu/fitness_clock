@@ -25,7 +25,7 @@ export default function Clock() {
   return (
     <div className="w-full max-w-7xl flex flex-col items-center py-8 px-4 lg:py-12 lg:px-8">
       {/* Logo Section */}
-      <div className="mb-8 w-64 lg:w-80 xl:w-96">
+      <div className="mb-8 w-64 lg:w-72">
         <Image
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-W-hPRb194aEtcDVdqyo30RxrqHG8TtEN.svg"
           alt="Fitness Factory Logo"
