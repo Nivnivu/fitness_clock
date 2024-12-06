@@ -23,7 +23,7 @@ export default function Clock() {
   }).format(time)
 
   return (
-    <div className="flex flex-col items-center justify-center gap-8 py-24">
+    <div className="flex flex-col items-center justify-center gap-8 my-16">
       {/* Logo */}
       <div className="w-[300px] lg:w-[400px]">
         <Image
@@ -36,7 +36,7 @@ export default function Clock() {
       </div>
       {/* Clock */}
       <div className="flex items-center justify-center bg-gray-900 border-4 border-gray-100 rounded-3xl shadow-xl px-6 py-4">
-        <span className="text-white font-mono text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[10rem] xl:text-[12rem] text-shadow">
+        <span className="text-white font-mono text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[10rem] xl:text-[12rem] ">
           {formattedTime}
         </span>
       </div>
