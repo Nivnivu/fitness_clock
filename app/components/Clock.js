@@ -23,22 +23,22 @@ export default function Clock() {
   }).format(time)
 
   return (
-    <div className="w-full max-w-7xl flex flex-col items-center py-8 px-4 lg:py-12 lg:px-8">
-      {/* Logo Section */}
-      <div className="mb-8 w-64 lg:w-72">
+    <div className="flex flex-col items-center justify-center gap-8">
+      {/* Logo */}
+      <div className="w-[300px] lg:w-[400px]">
         <Image
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-W-hPRb194aEtcDVdqyo30RxrqHG8TtEN.svg"
           alt="Fitness Factory Logo"
-          width={300}
-          height={300}
-          className="w-full h-auto mx-auto"
+          width={400}
+          height={400}
+          className="w-full h-auto"
         />
       </div>
-      {/* Clock Section */}
-      <div className="w-full max-w-full aspect-[24/9] bg-black border-4 border-white flex items-center justify-center rounded-3xl shadow-2xl lg:aspect-[32/9]">
-        <div className="text-white font-mono text-5xl sm:text-6xl md:text-8xl lg:text-[10rem] xl:text-[12rem] leading-none max-w-full px-4 overflow-hidden text-center">
+      {/* Clock */}
+      <div className="flex items-center justify-center bg-gray-900 border-4 border-gray-100 rounded-3xl shadow-xl px-6 py-4">
+        <span className="text-white font-mono text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[10rem] xl:text-[12rem] text-shadow">
           {formattedTime}
-        </div>
+        </span>
       </div>
     </div>
   )
