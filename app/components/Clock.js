@@ -23,7 +23,7 @@ export default function Clock() {
   }).format(time)
 
   return (
-    <div className="flex flex-col items-center justify-center gap-8">
+    <div className="flex flex-col items-center justify-center gap-8 py-24">
       {/* Logo */}
       <div className="w-[300px] lg:w-[400px]">
         <Image
