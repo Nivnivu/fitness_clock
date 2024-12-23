@@ -34,8 +34,9 @@ export default function Clock() {
         />
       </div>
       {/* Clock */}
-      <div className="flex items-center justify-center bg-black border-4 border-gray-100 rounded-3xl shadow-xl px-6 py-4">
-        <span className="text-white font-mono text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[10rem] xl:text-[12rem]">
+      {/* Clock */}
+      <div className="flex items-center justify-center bg-black border-4 border-white rounded-3xl shadow-xl px-6 py-4">
+        <span className="text-white font-mono text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[10rem] xl:text-[12rem] [color-scheme:light]">
           {formattedTime}
         </span>
       </div>
