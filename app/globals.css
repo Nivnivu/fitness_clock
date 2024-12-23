@@ -20,3 +20,39 @@ body {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
   }
 }
+
+
+/* Container for the entire clock and logo */
+.clock-container {
+  text-align: center; /* Center-aligns content horizontally */
+  margin: 50px auto; /* Centers the container on the page */
+}
+
+/* Logo Container */
+.logo-container {
+  width: 200px;
+  height: 100px;
+  margin: 0 auto; /* Center the logo */
+  overflow: hidden; /* Ensures the image doesn't overflow */
+}
+
+/* Logo Styling */
+.logo {
+  width: 100%; /* Ensures the logo fits the container */
+  height: auto; /* Maintains aspect ratio */
+}
+
+/* Clock Styling */
+.clock {
+  background-color: black; /* Background for the clock */
+  display: inline-block; /* Centers the clock */
+  padding: 10px 20px; /* Adds spacing inside the clock box */
+  margin-top: 20px; /* Adds spacing between logo and clock */
+  border: 1px solid black; /* Black border (old-school look) */
+}
+
+.clock-time {
+  font-family: monospace; /* Monospace font for the clock */
+  font-size: 3rem; /* Size of the clock text */
+  color: white; /* Text color */
+}
