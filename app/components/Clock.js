@@ -1,18 +1,22 @@
-'use client'
+'use client';
 
-import { useState, useEffect } from 'react'
-import Image from 'next/image'
+import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 export default function Clock() {
-  const [time, setTime] = useState(new Date())
+  const [time, setTime] = useState(null);
 
   useEffect(() => {
+    const now = new Date();
+    setTime(now);
     const timer = setInterval(() => {
-      setTime(new Date())
-    }, 1000)
+      setTime(new Date());
+    }, 1000);
 
-    return () => clearInterval(timer)
-  }, [])
+    return () => clearInterval(timer);
+  }, []);
+
+  if (!time) return null;
 
   const formattedTime = new Intl.DateTimeFormat('en-IL', {
     timeZone: 'Asia/Jerusalem',
@@ -20,7 +24,7 @@ export default function Clock() {
     minute: '2-digit',
     second: '2-digit',
     hour12: false,
-  }).format(time)
+  }).format(time);
 
   return (
     <div className="flex flex-col items-center justify-center gap-8 my-16">
@@ -35,17 +39,17 @@ export default function Clock() {
       </div>
       {/* Clock */}
       <div className="flex items-center justify-center dark:bg-black bg-black px-6 py-4">
-  <span
-    className="text-white font-mono text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[10rem] xl:text-[12rem] text-center"
-    style={{
-      border: 'none',
-      outline: 'none',
-      boxShadow: 'none',
-    }}
-  >
-    {formattedTime}
-  </span>
-</div>
+        <span
+          className="text-white font-mono text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[10rem] xl:text-[12rem] text-center"
+          style={{
+            border: 'none',
+            outline: 'none',
+            boxShadow: 'none',
+          }}
+        >
+          {formattedTime}
+        </span>
+      </div>
     </div>
-  )
+  );
 }
